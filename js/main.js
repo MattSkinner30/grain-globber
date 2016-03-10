@@ -1,6 +1,6 @@
 var peanuts = {
 	name: 'Peanuts',
-	img: 'images/peanuts.jpg',
+	img: 'peanuts.jpg',
 	desc: 'First cultivated in the valleys of Paraguay.'
 };
 
@@ -12,8 +12,11 @@ var beans = {
 
 var lentils = {
 	name: 'Lentils',
-	img: 'images/lentils.jpg',
+	img: 'lentils.jpg',
 	desc: 'An edible pulse from a bushy annual plant.'
 };
 
+var writeGrains = function (grains) {
 
+    document.write('<h2>' + grain.name + '</h2>');
+    document.write('img src="images/' + grain.img + '" alt="">');
