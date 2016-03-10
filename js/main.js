@@ -6,7 +6,7 @@ var peanuts = {
 
 var beans = {
 	name: 'Beans',
-	img: 'images/beans.jpg',
+	img: 'beans.jpg',
 	desc: 'A summer crop that needs warm temperatures.'
 };
 
@@ -18,5 +18,9 @@ var lentils = {
 
 var writeGrains = function (grains) {
 
+  grains.forEach(function (grain) {
     document.write('<h2>' + grain.name + '</h2>');
     document.write('img src="images/' + grain.img + '" alt="">');
+    document.write('<p>' + grain.desc + '</p>');
+  });
+}
